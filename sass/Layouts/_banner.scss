@@ -1,0 +1,23 @@
+.banner{
+    // color url position / bg-size bg-repeat
+    height: 325px;
+    background: url(../img/udemy-logo-semi-transparent.svg) 0/30% no-repeat, linear-gradient(61deg, $color-purple, $color-blue-1 41%) ;
+    // trung hòa 2 maù nền back
+    background-blend-mode: overlay;
+    // background: linear-gradient();
+    text-align: center;
+    display:  flex;
+    align-items: center;
+    h2{
+        @include styleText($color-white-0, $fs-4, $fw-0);
+    }
+    p{
+        color: $color-white-0;
+        margin-bottom: 0;
+    }
+    button{
+        color: $color-white-0;
+        margin: $mg-0 + 5  0;
+    }
+
+}

@@ -1,0 +1,45 @@
+.intro {
+    //màu trải
+    // -45deg nơi kết thúc
+    background: linear-gradient(-45deg, $color-red-0, $color-purple);
+    padding: $pd-3;
+    .intro__content {
+        width: 78%;
+        margin: 0 auto;
+        .intro__item {
+            display: flex;
+            align-items: center;
+        }
+        .intro__icon {
+            font-size: $fs-6;
+            color: $color-white-0;
+            margin-right: $mg-1;
+        }
+        .intro__detail {
+            .p {
+                margin: 0;
+            }
+            p:nth-child(1) {
+                @include styleText($color-white-0, $fs-3, $fw-1);
+                margin-bottom: 0;
+            }
+            p:nth-child(2) {
+                @include styleText($color-white-0, $fs-0, $fw-0);
+                margin-bottom: 0;
+            }
+        }
+    }
+    @include reponsive('extra-large'){
+        .intro__content{
+            width: 95%;
+            .intro__icon{
+                display: none;
+            }
+         
+        }
+    }
+    @include reponsive('medium'){
+            display: none; 
+            
+    }
+}

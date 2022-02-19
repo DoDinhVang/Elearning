@@ -1,0 +1,12 @@
+// .backgroundImg{
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+// }
+// :placeholder
+//  một cách khác khai báo để sử dụng extend
+%backgroundImg{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

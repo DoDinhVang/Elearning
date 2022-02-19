@@ -1,0 +1,62 @@
+.footer{
+    .row{
+        margin-right: -8px;
+    }
+    @include styleText($color-gray-0, $fs-1, $fw-0 );
+    .footer__top{
+        width: 90%;
+        margin: $mg-5 auto;
+        ul{
+           height: 110px;
+            .nav-item{
+                // mỗi hàng 25%
+                flex-basis: 25%;
+                .nav-link{
+                    color: $color-blue-0 ;
+                    padding: 0;
+                    &.nav-bold{
+                        font-weight:$fw-2 ;
+                    }
+                }
+            }
+        }
+        .btn-group{
+            button{
+                min-width: 160px;
+            }
+            .button--dropup{
+                box-shadow: none;
+                i{
+                    padding: 0 $pd-2;
+                }
+                &::after{
+                    margin-left: 30%;
+                }
+                
+            }
+            .dropdown-menu{
+                .dropdown-item{
+                    font-size: $fs-1;
+                }
+            }
+        }
+    }
+    .footer__bottom{
+        width: 90%;
+        margin: $mg-4 - 2 auto;
+        img{
+            width: 110px;
+            margin-right: $mg-0 + 5;
+        }
+        .logoWhite{
+            display: none;
+        }
+        .logoBlack{
+            display: inline-block;
+        }
+        .nav-link{
+            @include styleText($color-blue-0, $fs-1, $fw-0);
+        }
+    }
+  
+}

@@ -1,0 +1,76 @@
+.card{
+    height: 275px;
+    margin-right: 1px;
+    .card-body{
+        padding: 1rem;
+        .card-title{
+            @include styleText($color-black-0, $fs-0, $fw-1);
+        }
+        .card-text{
+            @include styleText($color-gray-0, $fs-1 - 1, $fw-0);
+            margin: $mg-0 0;
+        }
+        .card__star{
+            i{
+                @include styleText($color-yellow-0, $fs-1 - 1, $fw-3);
+            }
+            span:nth-child(2){
+                @include styleText($color-gray-0, $fs-1 - 1, $fw-1);
+
+            }
+            span:nth-child(3){
+                @include styleText($color-gray-0, $fs-1 - 1, $fw-0);
+                
+            }
+        }
+        .card_price{
+            text-align: right;
+            span{
+                &:nth-child(1){
+                    @include styleText($color-gray-0, $fs-1 - 1, $fw-0);
+                    text-decoration: line-through;
+
+                }
+                &:nth-child(2){
+                    @include styleText($color-black-0, $fs-0 - 1, $fw-1);
+
+                }
+            }
+        }
+    }
+    @media screen and(min-width: 600px)and(max-width:1380px){
+        height: 285px;
+    }
+  
+}
+.card--feedback{
+    height: 280px;
+    .card-body{
+        padding: 2rem;
+        .card__top{
+            display: flex;
+            margin-bottom: $mg-2 - 5;
+            .card__avatar{
+                margin-right: $mg-2 - 5 ;
+                img{
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 50%;
+                }
+            }
+            .card__name{
+               margin-bottom: 0;
+            }
+
+        }
+        .card-text{
+            @include styleText($color-black-0, $fs-0, $fw-0);
+        }
+        
+    }
+    // @media screen and(min-width: 992px)and(max-width:1200px){
+    //     height: 285px;
+    // }
+        
+    
+}
